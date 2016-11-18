@@ -16,9 +16,7 @@ int main() {
   }
   i = 0;
   while (after) {
-    //    printf("After: %s, ", after);
     words[i] = strsep(&after, " \n\t");
-    //    printf("words[i]: %s\n", words[i]);
     i++;
   }
   words[i - 1] = 0;  // removing empty string at the end
